@@ -81,6 +81,11 @@ public class MulticellularCreature : RigidBody, ISpawned, IProcessable, ISaveLoa
 
     public int DespawnRadiusSquared { get; set; }
 
+    /// <summary>
+    ///   TODO: adjust entity weight once fleshed out
+    /// </summary>
+    public int EntityWeight => 1;
+
     [JsonIgnore]
     public bool IsLoadedFromSave { get; set; }
 

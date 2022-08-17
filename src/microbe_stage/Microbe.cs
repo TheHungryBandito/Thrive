@@ -203,6 +203,8 @@ public partial class Microbe : RigidBody, ISpawned, IProcessable, IMicrobeAI, IS
     [JsonProperty]
     public int DespawnRadiusSquared { get; set; }
 
+    public int EntityWeight => organelles?.Count ?? 1;
+
     /// <summary>
     ///   If true this shifts the purpose of this cell for visualizations-only
     ///   (Completely stops the normal functioning of the cell).

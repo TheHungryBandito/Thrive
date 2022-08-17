@@ -194,7 +194,7 @@ public class SpawnSystem : ISpawnSystem
 
         // Update entity count estimate to keep this about up to date, this will be corrected within a few seconds
         // with the next spawn cycle to be exactly correct
-        ++estimateEntityCount;
+        estimateEntityCount += entity.EntityWeight;
     }
 
     public bool IsUnderEntityLimitForReproducing()
@@ -239,7 +239,7 @@ public class SpawnSystem : ISpawnSystem
                 // Next was spawned
                 ProcessSpawnedEntity(enumerator.Current, spawn.SpawnType);
 
-                ++estimateEntityCount;
+                estimateEntityCount += enumerator.Current.EntityWeight;
                 --spawnsLeftThisFrame;
                 ++spawned;
             }
@@ -401,7 +401,7 @@ public class SpawnSystem : ISpawnSystem
 
             ProcessSpawnedEntity(spawner.Current, spawnType);
             ++spawns;
-            ++estimateEntityCount;
+            estimateEntityCount += spawner.Current.EntityWeight;
             --spawnsLeftThisFrame;
         }
 
@@ -441,7 +441,7 @@ public class SpawnSystem : ISpawnSystem
             // If the entity is too far away from the player, despawn it.
             if (squaredDistance > spawned.DespawnRadiusSquared)
             {
-                ++entitiesDeleted;
+                entitiesDeleted += spawned.EntityWeight;
                 spawned.DestroyDetachAndQueueFree();
 
                 if (entitiesDeleted >= Constants.MAX_DESPAWNS_PER_FRAME)

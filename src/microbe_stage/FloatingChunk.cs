@@ -64,6 +64,8 @@ public class FloatingChunk : RigidBody, ISpawned, IEngulfable
 
     public int DespawnRadiusSquared { get; set; }
 
+    public int EntityWeight => 1;
+
     [JsonIgnore]
     public Spatial EntityNode => this;
 
