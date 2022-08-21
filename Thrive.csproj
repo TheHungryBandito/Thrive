@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Godot.NET.Sdk/3.3.0">
   <PropertyGroup>
     <ProjectGuid>{D38E3F51-1E8C-4F32-99B2-641320B0AC3C}</ProjectGuid>
@@ -597,5 +597,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="third_party\ThirdParty.csproj" />
+    <Content Include="src\general\DayNightConfiguration.cs" />
+    <Content Include="src\general\DayNightCycle.cs" />
   </ItemGroup>
 </Project>
