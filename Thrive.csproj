@@ -135,6 +135,7 @@
     <Compile Include="src\general\BehaviouralValueType.cs" />
     <Compile Include="src\general\BehaviourDictionary.cs" />
     <Compile Include="src\general\ColorUtils.cs" />
+    <Content Include="src\general\DayNightCycle.cs" />
     <Compile Include="src\general\EditorComponentBase.cs" />
     <Compile Include="src\general\EditorComponentWithActionsBase.cs" />
     <Compile Include="src\general\EditorUserOverride.cs" />
@@ -597,7 +598,5 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="third_party\ThirdParty.csproj" />
-    <Content Include="src\general\DayNightConfiguration.cs" />
-    <Content Include="src\general\DayNightCycle.cs" />
   </ItemGroup>
 </Project>
