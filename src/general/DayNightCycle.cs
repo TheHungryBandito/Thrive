@@ -2,7 +2,7 @@
 using System.Collections;
 using Godot;
 
-public class DayNightCycle : Godot.Node
+public class DayNightCycle : Node
 {
     public float HoursPerDay = 24;
 
