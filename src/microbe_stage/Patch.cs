@@ -31,14 +31,20 @@ public class Patch
     [JsonIgnore]
     private static readonly Compound Sunlight = SimulationParameters.Instance.GetCompound("sunlight");
 
-    public Patch(LocalizedString name, int id, Biome biomeTemplate, BiomeType type, PatchRegion region)
+    public Patch(LocalizedString name, int id, Biome biomeTemplate, BiomeType biomeType, PatchRegion region)
     {
         Name = name;
         ID = id;
         BiomeTemplate = biomeTemplate;
-        BiomeType = type;
+        BiomeType = biomeType;
         currentSnapshot = new PatchSnapshot((BiomeConditions)biomeTemplate.Conditions.Clone());
         Region = region;
+    }
+
+    public Patch(LocalizedString name, int id, Biome biomeTemplate, BiomeType biomeType, PatchSnapshot currentSnapshot)
+        : this(name, id, biomeTemplate, currentSnapshot)
+    {
+        BiomeType = biomeType;
     }
 
     [JsonConstructor]
@@ -85,6 +91,9 @@ public class Patch
     /// </summary>
     [JsonIgnore]
     public IReadOnlyList<PatchSnapshot> History => history;
+
+    [JsonIgnore]
+    public PatchSnapshot CurrentSnapshot => currentSnapshot;
 
     [JsonIgnore]
     public double TimePeriod
