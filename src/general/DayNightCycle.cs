@@ -22,10 +22,10 @@ public class DayNightCycle : Node
     /// </summary>
     public float DayLightPercentage
     {
-        get { return Math.Max(
-                -(float)Math.Pow(PercentOfDayElapsed - 0.5, 2) * LightCycleConfig.DaytimeDaylightLen + 1, 
-                0
-            ); }
+        get 
+        {
+            return Math.Max(-(float)Math.Pow(PercentOfDayElapsed - 0.5, 2) * LightCycleConfig.DaytimeDaylightLen + 1, 0);
+        }
     }
 
     public override void _Ready()
