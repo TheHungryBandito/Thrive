@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-08-23 15:18+0300\n"
+"POT-Creation-Date: 2022-08-25 11:02+0300\n"
 "PO-Revision-Date: 2022-08-11 10:21+0000\n"
 "Last-Translator: punctdan <yunusemredilek@hotmail.com>\n"
 "Language-Team: Turkish <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/tr/>\n"
@@ -1022,9 +1022,8 @@ msgid "CONFIG"
 msgstr "Yapılandırma"
 
 #: ../src/auto-evo/AutoEvoExploringTool.tscn:112
-#, fuzzy
 msgid "MAP"
-msgstr "ATP"
+msgstr "Harita"
 
 #: ../src/auto-evo/AutoEvoExploringTool.tscn:120
 #: ../src/microbe_stage/editor/MicrobeEditorTabButtons.tscn:113
@@ -1966,29 +1965,24 @@ msgid "ART_BY"
 msgstr "Resmi yapan: {0}"
 
 #: ../src/general/BehaviourDictionary.cs:102
-#, fuzzy
 msgid "BEHAVIOUR_AGGRESSION"
-msgstr "Davranış"
+msgstr "Saldırganlık"
 
 #: ../src/general/BehaviourDictionary.cs:103
-#, fuzzy
 msgid "BEHAVIOUR_OPPORTUNISM"
-msgstr "Davranış"
+msgstr "Fırsatçılık"
 
 #: ../src/general/BehaviourDictionary.cs:104
-#, fuzzy
 msgid "BEHAVIOUR_FEAR"
-msgstr "Davranış"
+msgstr "Korku"
 
 #: ../src/general/BehaviourDictionary.cs:105
-#, fuzzy
 msgid "BEHAVIOUR_ACTIVITY"
-msgstr "Davranış"
+msgstr "Etkinlik"
 
 #: ../src/general/BehaviourDictionary.cs:106
-#, fuzzy
 msgid "BEHAVIOUR_FOCUS"
-msgstr "Davranış"
+msgstr "Odak"
 
 #: ../src/general/EditorBase.cs:236
 msgid "WAITING_FOR_AUTO_EVO"
@@ -3749,7 +3743,7 @@ msgstr "Türler:"
 
 #: ../src/late_multicellular_stage/MulticellularHUD.tscn:533
 msgid "HOLD_FOR_CURSOR"
-msgstr ""
+msgstr "İmleç için TODO: girdisini basılı tut"
 
 #: ../src/late_multicellular_stage/MulticellularHUD.tscn:593
 #: ../src/microbe_stage/MicrobeStage.tscn:623
