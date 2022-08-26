@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-08-23 15:18+0300\n"
+"POT-Creation-Date: 2022-08-25 11:02+0300\n"
 "PO-Revision-Date: 2022-08-02 10:51+0000\n"
 "Last-Translator: Simone Nobili <simonenobili@yandex.com>\n"
 "Language-Team: Italian <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/it/>\n"
@@ -1022,9 +1022,8 @@ msgid "CONFIG"
 msgstr "Configurazione"
 
 #: ../src/auto-evo/AutoEvoExploringTool.tscn:112
-#, fuzzy
 msgid "MAP"
-msgstr "ATP"
+msgstr "Mappa"
 
 #: ../src/auto-evo/AutoEvoExploringTool.tscn:120
 #: ../src/microbe_stage/editor/MicrobeEditorTabButtons.tscn:113
@@ -1966,9 +1965,8 @@ msgid "ART_BY"
 msgstr "Autore: {0}"
 
 #: ../src/general/BehaviourDictionary.cs:102
-#, fuzzy
 msgid "BEHAVIOUR_AGGRESSION"
-msgstr "Comportamento"
+msgstr "Aggressività"
 
 #: ../src/general/BehaviourDictionary.cs:103
 #, fuzzy
@@ -1981,9 +1979,8 @@ msgid "BEHAVIOUR_FEAR"
 msgstr "Comportamento"
 
 #: ../src/general/BehaviourDictionary.cs:105
-#, fuzzy
 msgid "BEHAVIOUR_ACTIVITY"
-msgstr "Comportamento"
+msgstr "Attività"
 
 #: ../src/general/BehaviourDictionary.cs:106
 #, fuzzy
@@ -2262,9 +2259,8 @@ msgid "PASSIVE_REPRODUCTION_PROGRESS"
 msgstr "(velocità di mutazione delle specie controllate dall'intelligenza artificiale)"
 
 #: ../src/general/NewGameSettings.tscn:791
-#, fuzzy
 msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"
-msgstr "(velocità di mutazione delle specie controllate dall'intelligenza artificiale)"
+msgstr "(ottieni composti riproduttivi in modo passivo dall'ambiente, senza dover far nulla)"
 
 #: ../src/general/NewGameSettings.tscn:803
 #, fuzzy
@@ -3682,7 +3678,7 @@ msgstr "Impedisce la fagocitazione"
 #: ../src/gui_common/tooltip/ToolTipManager.tscn:2989
 #: ../src/gui_common/tooltip/ToolTipManager.tscn:3236
 msgid "RESISTANT_TO_BASIC_ENGULFMENT"
-msgstr ""
+msgstr "Resistente alla fagocitosi di base"
 
 #: ../src/gui_common/tooltip/ToolTipManager.tscn:3004
 msgid "CHITIN_MEMBRANE_DESCRIPTION"
@@ -4287,9 +4283,8 @@ msgid "INFINITE_MP"
 msgstr "PM infiniti"
 
 #: ../src/microbe_stage/editor/MicrobeEditorCheatMenu.tscn:37
-#, fuzzy
 msgid "MOVE_TO_ANY_PATCH"
-msgstr "Trasferisciti in questa zona"
+msgstr "Sblocca la possibilità di trasferirti in qualsiasi zona"
 
 #: ../src/microbe_stage/editor/MicrobeEditorPatchMap.tscn:125
 #: ../src/microbe_stage/gui/PatchExtinctionBox.tscn:164
