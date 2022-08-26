@@ -121,13 +121,13 @@ public class PatchManager : IChildPropertiesLoadCallback
 
     public void UpdatePatchBiome()
     {
-        if(previousPatch != null)
+        if (previousPatch != null)
         {
             previousPatch.UpdateBiomeConditions(lightCycle);
 
             // Update environment for process system
             processSystem.SetBiome(previousPatch.Biome);
-        }    
+        }
     }
 
     private void HandleChunkSpawns(BiomeConditions biome)

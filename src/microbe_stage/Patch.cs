@@ -12,6 +12,9 @@ using Nito.Collections;
 [UseThriveSerializer]
 public class Patch
 {
+    [JsonIgnore]
+    private static readonly Compound Sunlight = SimulationParameters.Instance.GetCompound("sunlight");
+
     /// <summary>
     ///   The current snapshot of this patch.
     /// </summary>
@@ -27,9 +30,6 @@ public class Patch
 
     [JsonProperty]
     private Deque<PatchSnapshot> history = new();
-    
-    [JsonIgnore]
-    private static readonly Compound Sunlight = SimulationParameters.Instance.GetCompound("sunlight");
 
     public Patch(LocalizedString name, int id, Biome biomeTemplate, BiomeType biomeType, PatchRegion region)
     {

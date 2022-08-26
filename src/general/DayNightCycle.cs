@@ -4,22 +4,16 @@ using Godot;
 
 public class DayNightCycle : Node
 {
-    public float HoursPerDay = 24;
-
-    /// <summary>
-    ///   This is how long it takes to complete a full day in realtime seconds
-    /// </summary>
-    private float realTimePerDay = 180;
-    private float daytimeDaylightLen = 16;
+    public DayNightConfiguration LightCycleConfiguration = null!;
 
     /// <summary>
     ///   The current time in hours
     /// </summary>
-    public float Time { get; set; }
+    public float Time = 0.5f;
 
     public float PercentOfDayElapsed
     {
-        get { return Time / HoursPerDay; }
+        get { return Time / LightCycleConfiguration.HoursPerDay; }
     }
 
     /// <summary>
@@ -29,11 +23,16 @@ public class DayNightCycle : Node
     /// </summary>
     public float DayLightPercentage
     {
-        get { return Math.Max(-(float)Math.Pow(PercentOfDayElapsed - 0.5, 2) * daytimeDaylightLen + 1, 0); }
+        get { return Math.Max(-(float)Math.Pow(PercentOfDayElapsed - 0.5, 2) * LightCycleConfiguration.DaytimeDaylightLen + 1, 0); }
+    }
+
+    public override void _Ready()
+    {
+        LightCycleConfiguration = SimulationParameters.Instance.GetDayNightCycleConfiguration();
     }
 
     public override void _Process(float delta)
     {
-        Time = (Time + (1 / realTimePerDay) * HoursPerDay * delta) % HoursPerDay;
+        Time = (Time + (1 / LightCycleConfiguration.RealTimePerDay) * LightCycleConfiguration.HoursPerDay * delta) % LightCycleConfiguration.HoursPerDay;
     }
 }

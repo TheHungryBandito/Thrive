@@ -29,6 +29,7 @@ public class SimulationParameters : Node
     private Dictionary<string, Gallery> gallery = null!;
     private TranslationsInfo translationsInfo = null!;
     private GameCredits gameCredits = null!;
+    private DayNightConfiguration lightCycle = null!;
     private Dictionary<string, DifficultyPreset> difficultyPresets = null!;
 
     // These are for mutations to be able to randomly pick items in a weighted manner
@@ -99,6 +100,9 @@ public class SimulationParameters : Node
 
         gameCredits =
             LoadDirectObject<GameCredits>("res://simulation_parameters/common/credits.json");
+
+        lightCycle =
+            LoadDirectObject<DayNightConfiguration>("res://simulation_parameters/common/day_night_cycle.json");
 
         difficultyPresets =
             LoadRegistry<DifficultyPreset>("res://simulation_parameters/common/difficulty_presets.json");
@@ -250,6 +254,11 @@ public class SimulationParameters : Node
     public GameCredits GetCredits()
     {
         return gameCredits;
+    }
+
+    public DayNightConfiguration GetDayNightCycleConfiguration()
+    {
+        return lightCycle;
     }
 
     public DifficultyPreset GetDifficultyPreset(string name)
@@ -453,6 +462,7 @@ public class SimulationParameters : Node
         autoEvoConfiguration.InternalName = AUTO_EVO_CONFIGURATION_NAME;
         translationsInfo.Check(string.Empty);
         gameCredits.Check(string.Empty);
+        lightCycle.Check(string.Empty);
     }
 
     private void ResolveValueRelationships()
