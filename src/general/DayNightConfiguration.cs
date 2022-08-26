@@ -1,5 +1,4 @@
-using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 /// <summary>
 ///   Definition for the day night cycle
@@ -22,6 +21,9 @@ public class DayNightConfiguration : IRegistryType
     [JsonProperty]
     public float RealTimePerDay { get; private set; }
 
+    /// <summary>
+    ///   This controls the amount of the day that has sunlight 
+    /// </summary>
     /// <remarks>
     ///   <para>
     ///     This is based on the equation. Test it in the desmos link in DayNightCycle before changing.

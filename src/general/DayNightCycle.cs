@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections;
 using Godot;
 
 public class DayNightCycle : Node
 {
-    public DayNightConfiguration LightCycleConfiguration = null!;
+    public DayNightConfiguration LightCycleConfig = null!;
 
     /// <summary>
     ///   The current time in hours
@@ -13,7 +12,7 @@ public class DayNightCycle : Node
 
     public float PercentOfDayElapsed
     {
-        get { return Time / LightCycleConfiguration.HoursPerDay; }
+        get { return Time / LightCycleConfig.HoursPerDay; }
     }
 
     /// <summary>
@@ -23,16 +22,20 @@ public class DayNightCycle : Node
     /// </summary>
     public float DayLightPercentage
     {
-        get { return Math.Max(-(float)Math.Pow(PercentOfDayElapsed - 0.5, 2) * LightCycleConfiguration.DaytimeDaylightLen + 1, 0); }
+        get { return Math.Max(
+                -(float)Math.Pow(PercentOfDayElapsed - 0.5, 2) * LightCycleConfig.DaytimeDaylightLen + 1, 
+                0
+            ); }
     }
 
     public override void _Ready()
     {
-        LightCycleConfiguration = SimulationParameters.Instance.GetDayNightCycleConfiguration();
+        LightCycleConfig = SimulationParameters.Instance.GetDayNightCycleConfiguration();
     }
 
     public override void _Process(float delta)
     {
-        Time = (Time + (1 / LightCycleConfiguration.RealTimePerDay) * LightCycleConfiguration.HoursPerDay * delta) % LightCycleConfiguration.HoursPerDay;
+        Time = (Time + (1 / LightCycleConfig.RealTimePerDay) * LightCycleConfig.HoursPerDay * delta) 
+            % LightCycleConfig.HoursPerDay;
     }
 }
