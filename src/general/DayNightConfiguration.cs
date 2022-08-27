@@ -3,11 +3,7 @@
 /// <summary>
 ///   Definition for the day night cycle
 /// </summary>
-/// <remarks>
-///   <para>
-///     Values for the DayNightCycle, as given in day_night_cycle.json
-///   </para>
-/// </remarks>
+/// <remarks> Values for the DayNightCycle, as given in day_night_cycle.json </remarks>
 public class DayNightConfiguration : IRegistryType
 {
     public string InternalName { get; set; } = null!;
@@ -22,15 +18,10 @@ public class DayNightConfiguration : IRegistryType
     public float RealTimePerDay { get; private set; }
 
     /// <summary>
-    ///   This controls the amount of the day that has sunlight 
+    ///   This is the percentage of the day that has sunlight
     /// </summary>
-    /// <remarks>
-    ///   <para>
-    ///     This is based on the equation. Test it in the desmos link in DayNightCycle before changing.
-    ///   </para>
-    /// </remarks>
     [JsonProperty]
-    public float DaytimeDaylightLen { get; private set; }
+    public float DaytimePercentage { get; private set; }
 
     public void Check(string name)
     {
