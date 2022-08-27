@@ -23,10 +23,7 @@ public class DayNightCycle : Node
     private float daytimeMultiplier;
 
     [JsonIgnore]
-    public float PercentOfDayElapsed
-    {
-        get { return Time / LightCycleConfig.HoursPerDay; }
-    }
+    public float PercentOfDayElapsed => Time / LightCycleConfig.HoursPerDay;
 
     /// <summary>
     ///   The percentage of daylight you should get.
@@ -34,13 +31,8 @@ public class DayNightCycle : Node
     ///   desmos: https://www.desmos.com/calculator/vrrk1bkac2
     /// </summary>
     [JsonIgnore]
-    public float DayLightPercentage
-    {
-        get
-        {
-            return Math.Max(-(float)Math.Pow(PercentOfDayElapsed - 0.5, 2) * daytimeMultiplier + 1, 0);
-        }
-    }
+    public float DayLightPercentage =>
+        Math.Max(-(float)Math.Pow(PercentOfDayElapsed - 0.5, 2) * daytimeMultiplier + 1, 0);
 
     public override void _Ready()
     {
