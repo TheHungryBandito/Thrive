@@ -17,7 +17,7 @@ public class DayNightCycle : Node
     /// </summary>
     /// <remarks>
     ///   This exists as it only needs to be calculated once and
-    ///   the calculation for it is confusing. 
+    ///   the calculation for it is confusing.
     /// </remarks>
     [JsonIgnore]
     private float daytimeMultiplier;
@@ -48,12 +48,11 @@ public class DayNightCycle : Node
 
         // This converts the percentage in DaytimePercentage to the power of two needed for DayLightPercentage
         daytimeMultiplier = (float)Math.Pow(2, 0.5 / LightCycleConfig.DaytimePercentage);
-        // Time = LightCycleConfig.HoursPerDay / 2;
     }
 
     public override void _Process(float delta)
     {
-        Time = (Time + (1 / LightCycleConfig.RealTimePerDay) * LightCycleConfig.HoursPerDay * delta) 
+        Time = (Time + (1 / LightCycleConfig.RealTimePerDay) * LightCycleConfig.HoursPerDay * delta)
             % LightCycleConfig.HoursPerDay;
     }
 }
