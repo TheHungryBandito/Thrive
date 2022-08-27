@@ -47,7 +47,7 @@ public class DayNightCycle : Node
         LightCycleConfig = SimulationParameters.Instance.GetDayNightCycleConfiguration();
 
         // This converts the percentage in DaytimePercentage to the power of two needed for DayLightPercentage
-        daytimeMultiplier = (float)Math.Pow(2, 0.5 / LightCycleConfig.DaytimePercentage);
+        daytimeMultiplier = (float)Math.Pow(2, 1 / (LightCycleConfig.DaytimePercentage / 2));
     }
 
     public override void _Process(float delta)
