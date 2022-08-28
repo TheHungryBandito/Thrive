@@ -84,7 +84,7 @@ public class RegistryTypeConverter : BaseThriveConverter
             return Context.Simulation.AutoEvoConfiguration;
         }
 
-        throw new Exception("a registry type is missing from the RegistryTypeConverter class. It needs to be hardcoded into the ReadJson function.");
+        throw new Exception("a registry type is missing from the RegistryTypeConverter's ReadJson function.");
     }
 
     public override void WriteJson(JsonWriter writer, object? value, JsonSerializer serializer)
