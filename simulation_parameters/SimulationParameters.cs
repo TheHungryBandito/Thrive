@@ -12,6 +12,7 @@ using File = Godot.File;
 public class SimulationParameters : Node
 {
     public const string AUTO_EVO_CONFIGURATION_NAME = "AutoEvoConfiguration";
+    public const string DAY_NIGHT_CYCLE_NAME = "DayNightConfiguration";
 
     private static SimulationParameters? instance;
 
@@ -463,6 +464,7 @@ public class SimulationParameters : Node
         translationsInfo.Check(string.Empty);
         gameCredits.Check(string.Empty);
         lightCycle.Check(string.Empty);
+        lightCycle.InternalName = DAY_NIGHT_CYCLE_NAME;
     }
 
     private void ResolveValueRelationships()

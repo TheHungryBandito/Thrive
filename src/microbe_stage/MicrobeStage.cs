@@ -26,6 +26,7 @@ public class MicrobeStage : StageBase<Microbe>
     private MicrobeAISystem microbeAISystem = null!;
     private MicrobeSystem microbeSystem = null!;
 
+    [JsonProperty]
     private DayNightCycle lightCycle = null!;
 
     private FloatingChunkSystem floatingChunkSystem = null!;
