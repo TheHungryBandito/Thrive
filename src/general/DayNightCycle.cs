@@ -1,10 +1,9 @@
 ﻿using System;
-using Godot;
 using Newtonsoft.Json;
 
 [JsonObject(IsReference = true)]
 [UseThriveSerializer]
-public class DayNightCycle : Node
+public class DayNightCycle
 {
     [JsonProperty]
     public DayNightConfiguration LightCycleConfig = null!;
@@ -19,8 +18,22 @@ public class DayNightCycle : Node
     [JsonIgnore]
     private float daytimeMultiplier;
 
+    public DayNightCycle()
+    {
+        LightCycleConfig = SimulationParameters.Instance.GetDayNightCycleConfiguration();
+        Time = LightCycleConfig.HoursPerDay / 2;
+
+        float halfPercentage = LightCycleConfig.DaytimePercentage / 2;
+
+        // This converts the percentage in DaytimePercentage to the power of two needed for DayLightPercentage
+        daytimeMultiplier = (float)Math.Pow(2, 1 / halfPercentage);
+
+        AverageSunlight = EvaluateAverageSunlight(0.5f + halfPercentage) 
+            - EvaluateAverageSunlight(0.5f - halfPercentage);
+    }
+
     [JsonIgnore]
-    public float AdverageSunlightPercentage { get; private set; }
+    public float AverageSunlight { get; private set; }
 
     /// <summary>
     ///   The current time in hours
@@ -36,37 +49,28 @@ public class DayNightCycle : Node
     ///   light = max(-(PercentOfDayElapsed - 0.5)^2 * daytimeMultiplier + 1, 0)
     ///   desmos: https://www.desmos.com/calculator/vrrk1bkac2
     /// </summary>
+    /// <remarks>
+    ///   If this equation is changed EvaluateAverageSunlight needs to be updated.
+    /// </remarks>
     [JsonIgnore]
     public float DayLightPercentage =>
         Math.Max(-(float)Math.Pow(PercentOfDayElapsed - 0.5, 2) * daytimeMultiplier + 1, 0);
 
-    public override void _Ready()
-    {
-        if (LightCycleConfig == null)
-        {
-            LightCycleConfig = SimulationParameters.Instance.GetDayNightCycleConfiguration();
-            Time = LightCycleConfig.HoursPerDay / 2;
-        }
-
-        float halfPercentage = LightCycleConfig.DaytimePercentage / 2;
-
-        // This converts the percentage in DaytimePercentage to the power of two needed for DayLightPercentage
-        daytimeMultiplier = (float)Math.Pow(2, 1 / halfPercentage);
-
-        AdverageSunlightPercentage = CalculateASP(0.5f + halfPercentage) - CalculateASP(0.5f - halfPercentage);
-    }
-
-    public override void _Process(float delta)
+    public void Process(float delta)
     {
         Time = (Time + (1 / LightCycleConfig.RealTimePerDay) * LightCycleConfig.HoursPerDay * delta)
             % LightCycleConfig.HoursPerDay;
     }
 
     /// <summary>
-    ///   Calculates an AdverageSunlightPercentage.
+    ///   Evaluates the DayLightPercentage Antiderivative to calculate AverageSunlight.
     /// </summary>
-    private float CalculateASP(float x)
+    /// <remarks>
+    ///   This is based on DayLightPercentage equation so if somone wants to change it
+    ///   they can do the calculus to fix this function.
+    /// </remarks>
+    private float EvaluateAverageSunlight(float x)
     {
-        return (float)(daytimeMultiplier * (Math.Pow(x, 3) / 3 - Math.Pow(x, 2) / 2 + 0.25 * x) + x);
+        return (float)(-daytimeMultiplier * (Math.Pow(x, 3) / 3 - Math.Pow(x, 2) / 2 + 0.25 * x) + x);
     }
 }

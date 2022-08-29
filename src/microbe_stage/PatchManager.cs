@@ -20,6 +20,8 @@ public class PatchManager : IChildPropertiesLoadCallback
     private CompoundCloudSystem compoundCloudSystem;
     private TimedLifeSystem timedLife;
     private DirectionalLight worldLight;
+
+    [JsonProperty]
     private DayNightCycle lightCycle;
 
     [JsonProperty]
