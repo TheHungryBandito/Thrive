@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 public class DayNightCycle
 {
     [JsonProperty]
-    public DayNightConfiguration LightCycleConfig = null!;
+    public DayNightConfiguration LightCycleConfig;
 
     /// <summary>
     ///   The multiplier used for calculating DayLightPercentage.
@@ -28,7 +28,7 @@ public class DayNightCycle
         // This converts the percentage in DaytimePercentage to the power of two needed for DayLightPercentage
         daytimeMultiplier = (float)Math.Pow(2, 1 / halfPercentage);
 
-        AverageSunlight = EvaluateAverageSunlight(0.5f + halfPercentage) 
+        AverageSunlight = EvaluateAverageSunlight(0.5f + halfPercentage)
             - EvaluateAverageSunlight(0.5f - halfPercentage);
     }
 
