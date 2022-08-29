@@ -199,14 +199,6 @@ public abstract class StageBase<TPlayer> : NodeWithInput, IStage, IGodotEarlyNod
         NodeReferencesResolved = true;
     }
 
-    public override void _Ready()
-    {
-        base._Ready();
-
-        if (!IsLoadedFromSave)
-            lightCycle = new DayNightCycle();
-    }
-
     public override void _Process(float delta)
     {
         base._Process(delta);
@@ -370,6 +362,8 @@ public abstract class StageBase<TPlayer> : NodeWithInput, IStage, IGodotEarlyNod
     {
         if (!IsLoadedFromSave)
         {
+            lightCycle = new DayNightCycle();
+
             if (CurrentGame == null)
             {
                 StartNewGame();
