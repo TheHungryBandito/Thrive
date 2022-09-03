@@ -2307,24 +2307,21 @@ msgid "EASTER_EGGS_EXPLANATION"
 msgstr "(randomly spawned secrets in the game)"
 
 #: ../src/general/NewGameSettings.tscn:1091
-#, fuzzy
 msgid "EXPERMENTAL_LABEL"
-msgstr "Entity label"
+msgstr "Expermental Settings"
 
 #: ../src/general/NewGameSettings.tscn:1098
-#, fuzzy
 msgid "EXPERMENTAL_WARNING"
-msgstr ""
-"Are you sure you want to exit to the main menu?\n"
-"You will lose any unsaved progress."
+msgstr "These settings are unstable and unpolished. They may affect your game in undesirable ways.\n"
+"Use at your own risk."
 
 #: ../src/general/NewGameSettings.tscn:1109
 msgid "DAY_NIGHT_CYCLE_ENABLED"
-msgstr ""
+msgstr "Enable DayNightCycle"
 
 #: ../src/general/NewGameSettings.tscn:1116
 msgid "DAY_NIGHT_CYCLE_ENABLED_EXPLANATION"
-msgstr ""
+msgstr "(this changes the light values of a patch over time)"
 
 #: ../src/general/NewGameSettings.tscn:1144
 msgid "ADVANCED_VIEW_BUTTON_TOOLTIP"
