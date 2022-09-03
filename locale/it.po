@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-08-31 10:22+0300\n"
+"POT-Creation-Date: 2022-09-02 21:41-0500\n"
 "PO-Revision-Date: 2022-08-25 21:34+0000\n"
 "Last-Translator: Simone Nobili <simonenobili@yandex.com>\n"
 "Language-Team: Italian <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/it/>\n"
@@ -40,42 +40,42 @@ msgid "CONCEPT_ART"
 msgstr "Concept art"
 
 #: ../simulation_parameters/common/gallery.json:6
-#: ../simulation_parameters/common/gallery.json:136
-#: ../simulation_parameters/common/gallery.json:286
+#: ../simulation_parameters/common/gallery.json:141
+#: ../simulation_parameters/common/gallery.json:291
 msgid "MICROBE_STAGE"
 msgstr "Fase Microbica"
 
 #: ../simulation_parameters/common/gallery.json:61
-#: ../simulation_parameters/common/gallery.json:362
+#: ../simulation_parameters/common/gallery.json:367
 msgid "MULTICELLULAR_STAGE"
 msgstr "Fase Multicellulare"
 
-#: ../simulation_parameters/common/gallery.json:81
+#: ../simulation_parameters/common/gallery.json:86
 msgid "GENERAL"
 msgstr "Generale"
 
-#: ../simulation_parameters/common/gallery.json:133
+#: ../simulation_parameters/common/gallery.json:138
 msgid "MODELS"
 msgstr "Modelli"
 
-#: ../simulation_parameters/common/gallery.json:249
+#: ../simulation_parameters/common/gallery.json:254
 msgid "MUSIC"
 msgstr "Musica"
 
-#: ../simulation_parameters/common/gallery.json:252
+#: ../simulation_parameters/common/gallery.json:257
 #: ../src/gui_common/art_gallery/GalleryViewer.cs:354
 msgid "ALL"
 msgstr "Tutto"
 
-#: ../simulation_parameters/common/gallery.json:263
+#: ../simulation_parameters/common/gallery.json:268
 msgid "MENU"
 msgstr "Menù"
 
-#: ../simulation_parameters/common/gallery.json:327
+#: ../simulation_parameters/common/gallery.json:332
 msgid "MICROBE_EDITOR"
 msgstr "Editor Microbico"
 
-#: ../simulation_parameters/common/gallery.json:403
+#: ../simulation_parameters/common/gallery.json:408
 msgid "MULTICELLULAR_EDITOR"
 msgstr "Editor Multicellulare"
 
@@ -1167,7 +1167,7 @@ msgstr "Dettagli specie"
 
 #: ../src/auto-evo/AutoEvoExploringTool.tscn:829
 #: ../src/general/MainMenu.tscn:337 ../src/general/MainMenu.tscn:413
-#: ../src/general/MainMenu.tscn:456 ../src/general/NewGameSettings.tscn:1092
+#: ../src/general/MainMenu.tscn:456 ../src/general/NewGameSettings.tscn:1127
 #: ../src/general/OptionsMenu.tscn:1367 ../src/general/PauseMenu.tscn:263
 #: ../src/microbe_stage/gui/ExtinctionBox.tscn:76
 #: ../src/modding/ModManager.tscn:81 ../src/saving/NewSaveMenu.tscn:110
@@ -2120,8 +2120,8 @@ msgstr "Errori di caricamento mod"
 msgid "MOD_LOAD_ERRORS_OCCURRED"
 msgstr "Si sono verificati degli errori nel caricamento di una o più mod. I log potrebbero contenere informazioni ulteriori."
 
-#: ../src/general/NewGameSettings.cs:299
-#: ../src/general/NewGameSettings.tscn:1132
+#: ../src/general/NewGameSettings.cs:304
+#: ../src/general/NewGameSettings.tscn:1167
 msgid "CONFIRM_NEW_GAME_BUTTON_TOOLTIP"
 msgstr "Avvia la partita con queste impostazioni"
 
@@ -2129,76 +2129,76 @@ msgstr "Avvia la partita con queste impostazioni"
 msgid "CONFIRM_NEW_GAME_BUTTON_TOOLTIP_DISABLED"
 msgstr "Alcune impostazioni non sono valide"
 
-#: ../src/general/NewGameSettings.tscn:120
+#: ../src/general/NewGameSettings.tscn:121
 #: ../src/general/NewGameSettings.tscn:361
 msgid "DIFFICULTY_PRESET"
 msgstr "Preimpostazione di difficoltà"
 
-#: ../src/general/NewGameSettings.tscn:148
+#: ../src/general/NewGameSettings.tscn:149
 #: ../src/general/NewGameSettings.tscn:894
 msgid "LAWK_ONLY"
 msgstr "Solo VCLC"
 
-#: ../src/general/NewGameSettings.tscn:155
+#: ../src/general/NewGameSettings.tscn:156
 #: ../src/general/NewGameSettings.tscn:901
 msgid "LAWK_ONLY_EXPLANATION"
 msgstr "(esclude parti e abilità estranee alla Vita Come La Conosciamo)"
 
-#: ../src/general/NewGameSettings.tscn:171
+#: ../src/general/NewGameSettings.tscn:172
 #: ../src/general/NewGameSettings.tscn:917
 msgid "LIFE_ORIGIN"
 msgstr "Origine della vita"
 
-#: ../src/general/NewGameSettings.tscn:178
+#: ../src/general/NewGameSettings.tscn:179
 #: ../src/general/NewGameSettings.tscn:924
 msgid "LIFE_ORIGIN_EXPLANATION"
 msgstr "(punto di partenza)"
 
-#: ../src/general/NewGameSettings.tscn:192
+#: ../src/general/NewGameSettings.tscn:193
 #: ../src/general/NewGameSettings.tscn:938
 msgid "LIFE_ORIGIN_TOOLTIP"
 msgstr "Alcune opzioni potrebbero essere disattivate in caso che \"Solo VCLC\" sia attivata"
 
-#: ../src/general/NewGameSettings.tscn:194
 #: ../src/general/NewGameSettings.tscn:195
+#: ../src/general/NewGameSettings.tscn:196
 #: ../src/general/NewGameSettings.tscn:940
 #: ../src/general/NewGameSettings.tscn:941
 msgid "LIFE_ORIGIN_VENTS"
 msgstr "Camini idrotermali"
 
-#: ../src/general/NewGameSettings.tscn:195
+#: ../src/general/NewGameSettings.tscn:196
 #: ../src/general/NewGameSettings.tscn:941
 msgid "LIFE_ORIGIN_POND"
 msgstr "Piccole e calde acque stagnanti"
 
-#: ../src/general/NewGameSettings.tscn:195
+#: ../src/general/NewGameSettings.tscn:196
 #: ../src/general/NewGameSettings.tscn:941
 msgid "LIFE_ORIGIN_PANSPERMIA"
 msgstr "Panspermia (casuale)"
 
-#: ../src/general/NewGameSettings.tscn:210
+#: ../src/general/NewGameSettings.tscn:211
 #: ../src/general/NewGameSettings.tscn:956
 msgid "PLANET_RANDOM_SEED"
 msgstr "Seme casuale del pianeta"
 
-#: ../src/general/NewGameSettings.tscn:229
+#: ../src/general/NewGameSettings.tscn:230
 #: ../src/general/NewGameSettings.tscn:975
 msgid "RANDOM_SEED_TOOLTIP"
 msgstr "Il valore usato per generare il mondo; deve essere un numero intero positivo"
 
-#: ../src/general/NewGameSettings.tscn:268
+#: ../src/general/NewGameSettings.tscn:269
 msgid "NEW_GAME_SETTINGS_PERFORMANCE_OPTIONS_INFO"
 msgstr "Una nota: puoi modificare le impostazioni legate alle prestazioni in qualsiasi momento nel [color=#3796e1][url=thrive://GUI/OptionsMenu/Performance]menù delle opzioni[/url][/color]"
 
-#: ../src/general/NewGameSettings.tscn:290
+#: ../src/general/NewGameSettings.tscn:291
 msgid "DIFFICULTY"
 msgstr "Difficoltà"
 
-#: ../src/general/NewGameSettings.tscn:300
+#: ../src/general/NewGameSettings.tscn:301
 msgid "PLANET"
 msgstr "Pianeta"
 
-#: ../src/general/NewGameSettings.tscn:310 ../src/general/OptionsMenu.tscn:187
+#: ../src/general/NewGameSettings.tscn:311 ../src/general/OptionsMenu.tscn:187
 msgid "MISC"
 msgstr "Altro"
 
@@ -2314,23 +2314,43 @@ msgstr "Includi easter eggs"
 msgid "EASTER_EGGS_EXPLANATION"
 msgstr "(segreti che possono apparire casualmente nel gioco)"
 
+#: ../src/general/NewGameSettings.tscn:1091
+#, fuzzy
+msgid "EXPERMENTAL_LABEL"
+msgstr "Etichetta entità"
+
+#: ../src/general/NewGameSettings.tscn:1098
+#, fuzzy
+msgid "EXPERMENTAL_WARNING"
+msgstr ""
+"Sicuro di voler chiudere e andare al menù principale?\n"
+"Perderai tutti i progressi non salvati."
+
 #: ../src/general/NewGameSettings.tscn:1109
+msgid "DAY_NIGHT_CYCLE_ENABLED"
+msgstr ""
+
+#: ../src/general/NewGameSettings.tscn:1116
+msgid "DAY_NIGHT_CYCLE_ENABLED_EXPLANATION"
+msgstr ""
+
+#: ../src/general/NewGameSettings.tscn:1144
 msgid "ADVANCED_VIEW_BUTTON_TOOLTIP"
 msgstr "Apri la visualizzazione avanzata delle preimpostazioni"
 
-#: ../src/general/NewGameSettings.tscn:1111
+#: ../src/general/NewGameSettings.tscn:1146
 msgid "ADVANCED_VIEW"
 msgstr "Avanzata"
 
-#: ../src/general/NewGameSettings.tscn:1122
+#: ../src/general/NewGameSettings.tscn:1157
 msgid "BASIC_VIEW_BUTTON_TOOLTIP"
 msgstr "Torna alla visione di base"
 
-#: ../src/general/NewGameSettings.tscn:1123
+#: ../src/general/NewGameSettings.tscn:1158
 msgid "BASIC_VIEW"
 msgstr "Di base"
 
-#: ../src/general/NewGameSettings.tscn:1133
+#: ../src/general/NewGameSettings.tscn:1168
 msgid "CONFIRM_NORMAL"
 msgstr "Conferma"
 

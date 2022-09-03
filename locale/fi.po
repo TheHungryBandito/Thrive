@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-08-31 10:22+0300\n"
+"POT-Creation-Date: 2022-09-02 21:41-0500\n"
 "PO-Revision-Date: 2022-07-26 06:43+0000\n"
 "Last-Translator: Juuso Vahala <juuso.raimosamuli@gmail.com>\n"
 "Language-Team: Finnish <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/fi/>\n"
@@ -40,8 +40,8 @@ msgid "CONCEPT_ART"
 msgstr "Konseptitaide"
 
 #: ../simulation_parameters/common/gallery.json:6
-#: ../simulation_parameters/common/gallery.json:136
-#: ../simulation_parameters/common/gallery.json:286
+#: ../simulation_parameters/common/gallery.json:141
+#: ../simulation_parameters/common/gallery.json:291
 #, fuzzy
 msgid "MICROBE_STAGE"
 msgstr ""
@@ -54,42 +54,42 @@ msgstr ""
 "Selviytyäkseksi tässä armottomassa ympäristössä, sinun täytyy etsiä ja kerätä yhdisteitä. Niiden avulla voit kehittyä sukupolvien saatossa ja kilpailla muiden lajien kanssa."
 
 #: ../simulation_parameters/common/gallery.json:61
-#: ../simulation_parameters/common/gallery.json:362
+#: ../simulation_parameters/common/gallery.json:367
 #, fuzzy
 msgid "MULTICELLULAR_STAGE"
 msgstr "Lisää soluelin"
 
-#: ../simulation_parameters/common/gallery.json:81
+#: ../simulation_parameters/common/gallery.json:86
 #, fuzzy
 msgid "GENERAL"
 msgstr "Sukupolvi:"
 
-#: ../simulation_parameters/common/gallery.json:133
+#: ../simulation_parameters/common/gallery.json:138
 #, fuzzy
 msgid "MODELS"
 msgstr "Kuolemattomuus"
 
-#: ../simulation_parameters/common/gallery.json:249
+#: ../simulation_parameters/common/gallery.json:254
 msgid "MUSIC"
 msgstr "Musiikki"
 
-#: ../simulation_parameters/common/gallery.json:252
+#: ../simulation_parameters/common/gallery.json:257
 #: ../src/gui_common/art_gallery/GalleryViewer.cs:354
 #, fuzzy
 msgid "ALL"
 msgstr "Alt"
 
-#: ../simulation_parameters/common/gallery.json:263
+#: ../simulation_parameters/common/gallery.json:268
 #, fuzzy
 msgid "MENU"
 msgstr "Valikko"
 
-#: ../simulation_parameters/common/gallery.json:327
+#: ../simulation_parameters/common/gallery.json:332
 #, fuzzy
 msgid "MICROBE_EDITOR"
 msgstr "Ladataan mikrobieditoria"
 
-#: ../simulation_parameters/common/gallery.json:403
+#: ../simulation_parameters/common/gallery.json:408
 #, fuzzy
 msgid "MULTICELLULAR_EDITOR"
 msgstr "Ladataan mikrobieditoria"
@@ -1205,7 +1205,7 @@ msgstr "Lista lajeista"
 
 #: ../src/auto-evo/AutoEvoExploringTool.tscn:829
 #: ../src/general/MainMenu.tscn:337 ../src/general/MainMenu.tscn:413
-#: ../src/general/MainMenu.tscn:456 ../src/general/NewGameSettings.tscn:1092
+#: ../src/general/MainMenu.tscn:456 ../src/general/NewGameSettings.tscn:1127
 #: ../src/general/OptionsMenu.tscn:1367 ../src/general/PauseMenu.tscn:263
 #: ../src/microbe_stage/gui/ExtinctionBox.tscn:76
 #: ../src/modding/ModManager.tscn:81 ../src/saving/NewSaveMenu.tscn:110
@@ -2162,8 +2162,8 @@ msgstr "Modien latausvirheet"
 msgid "MOD_LOAD_ERRORS_OCCURRED"
 msgstr "Yhden tai useamman modin latauksessa kohdattiin virheitä. Lokit voivat sisältää lisää tietoa."
 
-#: ../src/general/NewGameSettings.cs:299
-#: ../src/general/NewGameSettings.tscn:1132
+#: ../src/general/NewGameSettings.cs:304
+#: ../src/general/NewGameSettings.tscn:1167
 #, fuzzy
 msgid "CONFIRM_NEW_GAME_BUTTON_TOOLTIP"
 msgstr "Pysäytysmenu"
@@ -2173,17 +2173,17 @@ msgstr "Pysäytysmenu"
 msgid "CONFIRM_NEW_GAME_BUTTON_TOOLTIP_DISABLED"
 msgstr "Pysäytysmenu"
 
-#: ../src/general/NewGameSettings.tscn:120
+#: ../src/general/NewGameSettings.tscn:121
 #: ../src/general/NewGameSettings.tscn:361
 msgid "DIFFICULTY_PRESET"
 msgstr "Vaikeustason esiasetus"
 
-#: ../src/general/NewGameSettings.tscn:148
+#: ../src/general/NewGameSettings.tscn:149
 #: ../src/general/NewGameSettings.tscn:894
 msgid "LAWK_ONLY"
 msgstr "Vain LAWK"
 
-#: ../src/general/NewGameSettings.tscn:155
+#: ../src/general/NewGameSettings.tscn:156
 #: ../src/general/NewGameSettings.tscn:901
 #, fuzzy
 msgid "LAWK_ONLY_EXPLANATION"
@@ -2193,12 +2193,12 @@ msgstr ""
 "Rohkeat mikrobit eivät välitä pedoista lähellään ja hyökkäävät\n"
 "todennäköisimmin takaisin uhattuna."
 
-#: ../src/general/NewGameSettings.tscn:171
+#: ../src/general/NewGameSettings.tscn:172
 #: ../src/general/NewGameSettings.tscn:917
 msgid "LIFE_ORIGIN"
 msgstr "Elämän alkuperä"
 
-#: ../src/general/NewGameSettings.tscn:178
+#: ../src/general/NewGameSettings.tscn:179
 #: ../src/general/NewGameSettings.tscn:924
 #, fuzzy
 msgid "LIFE_ORIGIN_EXPLANATION"
@@ -2208,53 +2208,53 @@ msgstr ""
 "Rohkeat mikrobit eivät välitä pedoista lähellään ja hyökkäävät\n"
 "todennäköisimmin takaisin uhattuna."
 
-#: ../src/general/NewGameSettings.tscn:192
+#: ../src/general/NewGameSettings.tscn:193
 #: ../src/general/NewGameSettings.tscn:938
 #, fuzzy
 msgid "LIFE_ORIGIN_TOOLTIP"
 msgstr "Kuole"
 
-#: ../src/general/NewGameSettings.tscn:194
 #: ../src/general/NewGameSettings.tscn:195
+#: ../src/general/NewGameSettings.tscn:196
 #: ../src/general/NewGameSettings.tscn:940
 #: ../src/general/NewGameSettings.tscn:941
 msgid "LIFE_ORIGIN_VENTS"
 msgstr "Mustat savuttajat"
 
-#: ../src/general/NewGameSettings.tscn:195
+#: ../src/general/NewGameSettings.tscn:196
 #: ../src/general/NewGameSettings.tscn:941
 msgid "LIFE_ORIGIN_POND"
 msgstr "Lämmin pieni allas"
 
-#: ../src/general/NewGameSettings.tscn:195
+#: ../src/general/NewGameSettings.tscn:196
 #: ../src/general/NewGameSettings.tscn:941
 msgid "LIFE_ORIGIN_PANSPERMIA"
 msgstr "Panspermia (satunnainen)"
 
-#: ../src/general/NewGameSettings.tscn:210
+#: ../src/general/NewGameSettings.tscn:211
 #: ../src/general/NewGameSettings.tscn:956
 msgid "PLANET_RANDOM_SEED"
 msgstr "Planeetan satunnainen lähtöarvo"
 
-#: ../src/general/NewGameSettings.tscn:229
+#: ../src/general/NewGameSettings.tscn:230
 #: ../src/general/NewGameSettings.tscn:975
 #, fuzzy
 msgid "RANDOM_SEED_TOOLTIP"
 msgstr "Laita peli tauolle"
 
-#: ../src/general/NewGameSettings.tscn:268
+#: ../src/general/NewGameSettings.tscn:269
 msgid "NEW_GAME_SETTINGS_PERFORMANCE_OPTIONS_INFO"
 msgstr ""
 
-#: ../src/general/NewGameSettings.tscn:290
+#: ../src/general/NewGameSettings.tscn:291
 msgid "DIFFICULTY"
 msgstr "Vaikeustaso"
 
-#: ../src/general/NewGameSettings.tscn:300
+#: ../src/general/NewGameSettings.tscn:301
 msgid "PLANET"
 msgstr "Planeetta"
 
-#: ../src/general/NewGameSettings.tscn:310 ../src/general/OptionsMenu.tscn:187
+#: ../src/general/NewGameSettings.tscn:311 ../src/general/OptionsMenu.tscn:187
 msgid "MISC"
 msgstr "Muut"
 
@@ -2400,25 +2400,45 @@ msgstr ""
 "Rohkeat mikrobit eivät välitä pedoista lähellään ja hyökkäävät\n"
 "todennäköisimmin takaisin uhattuna."
 
+#: ../src/general/NewGameSettings.tscn:1091
+#, fuzzy
+msgid "EXPERMENTAL_LABEL"
+msgstr "Biomi: {0}"
+
+#: ../src/general/NewGameSettings.tscn:1098
+#, fuzzy
+msgid "EXPERMENTAL_WARNING"
+msgstr ""
+"Haluatko varmasti palata päävalikkoon?\n"
+"Menetät tallentamattomat tiedot."
+
 #: ../src/general/NewGameSettings.tscn:1109
+msgid "DAY_NIGHT_CYCLE_ENABLED"
+msgstr ""
+
+#: ../src/general/NewGameSettings.tscn:1116
+msgid "DAY_NIGHT_CYCLE_ENABLED_EXPLANATION"
+msgstr ""
+
+#: ../src/general/NewGameSettings.tscn:1144
 #, fuzzy
 msgid "ADVANCED_VIEW_BUTTON_TOOLTIP"
 msgstr "Pysäytysmenu"
 
-#: ../src/general/NewGameSettings.tscn:1111
+#: ../src/general/NewGameSettings.tscn:1146
 msgid "ADVANCED_VIEW"
 msgstr ""
 
-#: ../src/general/NewGameSettings.tscn:1122
+#: ../src/general/NewGameSettings.tscn:1157
 #, fuzzy
 msgid "BASIC_VIEW_BUTTON_TOOLTIP"
 msgstr "Kuole"
 
-#: ../src/general/NewGameSettings.tscn:1123
+#: ../src/general/NewGameSettings.tscn:1158
 msgid "BASIC_VIEW"
 msgstr ""
 
-#: ../src/general/NewGameSettings.tscn:1133
+#: ../src/general/NewGameSettings.tscn:1168
 #, fuzzy
 msgid "CONFIRM_NORMAL"
 msgstr "VAHVISTA"
