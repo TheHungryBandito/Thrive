@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-09-02 21:41-0500\n"
+"POT-Creation-Date: 2022-09-03 13:36-0500\n"
 "PO-Revision-Date: 2022-08-25 07:28+0000\n"
 "Last-Translator: Capivaresco <deepohsix@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/pt_BR/>\n"
@@ -1161,7 +1161,7 @@ msgstr "Detalhes da espécie"
 
 #: ../src/auto-evo/AutoEvoExploringTool.tscn:829
 #: ../src/general/MainMenu.tscn:337 ../src/general/MainMenu.tscn:413
-#: ../src/general/MainMenu.tscn:456 ../src/general/NewGameSettings.tscn:1127
+#: ../src/general/MainMenu.tscn:456 ../src/general/NewGameSettings.tscn:1131
 #: ../src/general/OptionsMenu.tscn:1367 ../src/general/PauseMenu.tscn:263
 #: ../src/microbe_stage/gui/ExtinctionBox.tscn:76
 #: ../src/modding/ModManager.tscn:81 ../src/saving/NewSaveMenu.tscn:110
@@ -2112,7 +2112,7 @@ msgid "MOD_LOAD_ERRORS_OCCURRED"
 msgstr "Houve erros ao carregar um ou mais mods. Os logs podem conter mais informações."
 
 #: ../src/general/NewGameSettings.cs:304
-#: ../src/general/NewGameSettings.tscn:1167
+#: ../src/general/NewGameSettings.tscn:1171
 msgid "CONFIRM_NEW_GAME_BUTTON_TOOLTIP"
 msgstr "Entrar no jogo com essas configurações"
 
@@ -2120,227 +2120,227 @@ msgstr "Entrar no jogo com essas configurações"
 msgid "CONFIRM_NEW_GAME_BUTTON_TOOLTIP_DISABLED"
 msgstr "Algumas configurações são inválidas"
 
-#: ../src/general/NewGameSettings.tscn:121
-#: ../src/general/NewGameSettings.tscn:361
+#: ../src/general/NewGameSettings.tscn:123
+#: ../src/general/NewGameSettings.tscn:364
 msgid "DIFFICULTY_PRESET"
 msgstr "Dificuldade predefinida"
 
-#: ../src/general/NewGameSettings.tscn:149
-#: ../src/general/NewGameSettings.tscn:894
+#: ../src/general/NewGameSettings.tscn:151
+#: ../src/general/NewGameSettings.tscn:897
 msgid "LAWK_ONLY"
 msgstr "Somente vida baseada na realidade"
 
-#: ../src/general/NewGameSettings.tscn:156
-#: ../src/general/NewGameSettings.tscn:901
+#: ../src/general/NewGameSettings.tscn:158
+#: ../src/general/NewGameSettings.tscn:904
 msgid "LAWK_ONLY_EXPLANATION"
 msgstr "(restringe partes e habilidades para somente as que são baseadas na vida real)"
 
-#: ../src/general/NewGameSettings.tscn:172
-#: ../src/general/NewGameSettings.tscn:917
+#: ../src/general/NewGameSettings.tscn:174
+#: ../src/general/NewGameSettings.tscn:920
 msgid "LIFE_ORIGIN"
 msgstr "Origem da vida"
 
-#: ../src/general/NewGameSettings.tscn:179
-#: ../src/general/NewGameSettings.tscn:924
+#: ../src/general/NewGameSettings.tscn:181
+#: ../src/general/NewGameSettings.tscn:927
 msgid "LIFE_ORIGIN_EXPLANATION"
 msgstr "(ponto de partida)"
 
-#: ../src/general/NewGameSettings.tscn:193
-#: ../src/general/NewGameSettings.tscn:938
+#: ../src/general/NewGameSettings.tscn:195
+#: ../src/general/NewGameSettings.tscn:941
 msgid "LIFE_ORIGIN_TOOLTIP"
 msgstr "Algumas opções podem estar desabilitadas caso você tenha habilitado “Somente vida baseada na realidade”"
 
-#: ../src/general/NewGameSettings.tscn:195
-#: ../src/general/NewGameSettings.tscn:196
-#: ../src/general/NewGameSettings.tscn:940
-#: ../src/general/NewGameSettings.tscn:941
+#: ../src/general/NewGameSettings.tscn:197
+#: ../src/general/NewGameSettings.tscn:198
+#: ../src/general/NewGameSettings.tscn:943
+#: ../src/general/NewGameSettings.tscn:944
 msgid "LIFE_ORIGIN_VENTS"
 msgstr "Fontes hidrotermais"
 
-#: ../src/general/NewGameSettings.tscn:196
-#: ../src/general/NewGameSettings.tscn:941
+#: ../src/general/NewGameSettings.tscn:198
+#: ../src/general/NewGameSettings.tscn:944
 msgid "LIFE_ORIGIN_POND"
 msgstr "Pequena poça aquecida"
 
-#: ../src/general/NewGameSettings.tscn:196
-#: ../src/general/NewGameSettings.tscn:941
+#: ../src/general/NewGameSettings.tscn:198
+#: ../src/general/NewGameSettings.tscn:944
 msgid "LIFE_ORIGIN_PANSPERMIA"
 msgstr "Panspermia (aleatório)"
 
-#: ../src/general/NewGameSettings.tscn:211
-#: ../src/general/NewGameSettings.tscn:956
+#: ../src/general/NewGameSettings.tscn:213
+#: ../src/general/NewGameSettings.tscn:959
 msgid "PLANET_RANDOM_SEED"
 msgstr "Seed aleatória do planeta"
 
-#: ../src/general/NewGameSettings.tscn:230
-#: ../src/general/NewGameSettings.tscn:975
+#: ../src/general/NewGameSettings.tscn:232
+#: ../src/general/NewGameSettings.tscn:978
 msgid "RANDOM_SEED_TOOLTIP"
 msgstr "O valor usado para gerar o mundo, que deve ser um número inteiro positivo"
 
-#: ../src/general/NewGameSettings.tscn:269
+#: ../src/general/NewGameSettings.tscn:271
 msgid "NEW_GAME_SETTINGS_PERFORMANCE_OPTIONS_INFO"
 msgstr "Nota: você pode mudar as opções relacionadas ao desempenho a qualquer momento no [color=#3796e1][url=thrive://GUI/OptionsMenu/Performance]menu de opções[/url][/color] para melhorar o desempenho do jogo"
 
-#: ../src/general/NewGameSettings.tscn:291
+#: ../src/general/NewGameSettings.tscn:293
 msgid "DIFFICULTY"
 msgstr "Dificuldade"
 
-#: ../src/general/NewGameSettings.tscn:301
+#: ../src/general/NewGameSettings.tscn:303
 msgid "PLANET"
 msgstr "Planeta"
 
-#: ../src/general/NewGameSettings.tscn:311 ../src/general/OptionsMenu.tscn:187
+#: ../src/general/NewGameSettings.tscn:313 ../src/general/OptionsMenu.tscn:187
 msgid "MISC"
 msgstr "Diversos"
 
-#: ../src/general/NewGameSettings.tscn:400
+#: ../src/general/NewGameSettings.tscn:403
 msgid "MUTATION_COST_MULTIPLIER"
 msgstr "Multiplicador do custo de mutação"
 
-#: ../src/general/NewGameSettings.tscn:445
+#: ../src/general/NewGameSettings.tscn:448
 msgid "MUTATION_COST_MULTIPLIER_EXPLANATION"
 msgstr "(custo das organelas, membranas e outros itens do editor)"
 
-#: ../src/general/NewGameSettings.tscn:462
+#: ../src/general/NewGameSettings.tscn:465
 msgid "AI_MUTATION_RATE"
 msgstr "Taxa de mutação da IA"
 
-#: ../src/general/NewGameSettings.tscn:507
+#: ../src/general/NewGameSettings.tscn:510
 msgid "AI_MUTATION_RATE_EXPLANATION"
 msgstr "(velocidade que a IA se muta)"
 
-#: ../src/general/NewGameSettings.tscn:524
+#: ../src/general/NewGameSettings.tscn:527
 msgid "COMPOUND_CLOUD_DENSITY"
 msgstr "Densidade das nuvens de compostos"
 
-#: ../src/general/NewGameSettings.tscn:569
+#: ../src/general/NewGameSettings.tscn:572
 msgid "COMPOUND_CLOUD_DENSITY_EXPLANATION"
 msgstr "(densidade das nuvens de compostos no ambiente)"
 
-#: ../src/general/NewGameSettings.tscn:586
+#: ../src/general/NewGameSettings.tscn:589
 msgid "PLAYER_DEATH_POPULATION_PENALTY"
 msgstr "Penalidade na população por morte do jogador"
 
-#: ../src/general/NewGameSettings.tscn:631
+#: ../src/general/NewGameSettings.tscn:634
 msgid "PLAYER_DEATH_POPULATION_PENALTY_EXPLANATION"
 msgstr "(coeficiente para a redução na população da espécie do jogador para cada morte)"
 
-#: ../src/general/NewGameSettings.tscn:648
+#: ../src/general/NewGameSettings.tscn:651
 msgid "ENVIRONMENTAL_GLUCOSE_RETENTION"
 msgstr "Retenção da glicose ambiental"
 
-#: ../src/general/NewGameSettings.tscn:692
+#: ../src/general/NewGameSettings.tscn:695
 msgid "ENVIRONMENTAL_GLUCOSE_RETENTION_EXPLANATION"
 msgstr "(proporção da glicose conservada no ambiente a cada geração)"
 
-#: ../src/general/NewGameSettings.tscn:709
+#: ../src/general/NewGameSettings.tscn:712
 msgid "OSMOREGULATION_COST_MULTIPLIER"
 msgstr "Multiplicador do custo da osmorregulação"
 
-#: ../src/general/NewGameSettings.tscn:754
+#: ../src/general/NewGameSettings.tscn:757
 msgid "OSMOREGULATION_COST_MULTIPLIER_EXPLANATION"
 msgstr "(custo da osmorregulação da espécie do jogador)"
 
-#: ../src/general/NewGameSettings.tscn:766
+#: ../src/general/NewGameSettings.tscn:769
 msgid "FREE_GLUCOSE_CLOUD"
 msgstr "Nuvem de glicose disponível ao sair do editor"
 
-#: ../src/general/NewGameSettings.tscn:773
+#: ../src/general/NewGameSettings.tscn:776
 msgid "FREE_GLUCOSE_CLOUD_EXPLANATION"
 msgstr "(começar com uma nuvem de glicose próxima após cada reprodução)"
 
-#: ../src/general/NewGameSettings.tscn:785
+#: ../src/general/NewGameSettings.tscn:788
 msgid "PASSIVE_REPRODUCTION_PROGRESS"
 msgstr "Ganhar compostos para a reprodução passivamente"
 
-#: ../src/general/NewGameSettings.tscn:792
+#: ../src/general/NewGameSettings.tscn:795
 msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"
 msgstr "(ganhar os compostos necessários para a reprodução do ambiente sem ter que fazer nada)"
 
-#: ../src/general/NewGameSettings.tscn:804
+#: ../src/general/NewGameSettings.tscn:807
 #, fuzzy
 msgid "LIMIT_GROWTH_RATE"
 msgstr "Normal"
 
-#: ../src/general/NewGameSettings.tscn:811
+#: ../src/general/NewGameSettings.tscn:814
 #, fuzzy
 msgid "LIMIT_GROWTH_RATE_EXPLANATION"
 msgstr "(velocidade que a IA se muta)"
 
-#: ../src/general/NewGameSettings.tscn:855
+#: ../src/general/NewGameSettings.tscn:858
 msgid "PATCH_MAP_TYPE"
 msgstr "Tipo de mapa de regiões"
 
-#: ../src/general/NewGameSettings.tscn:862
+#: ../src/general/NewGameSettings.tscn:865
 msgid "PATCH_MAP_TYPE_EXPLANATION"
 msgstr "(gera um mapa de regiões ou usa o layout clássico)"
 
-#: ../src/general/NewGameSettings.tscn:877
-#: ../src/general/NewGameSettings.tscn:878
+#: ../src/general/NewGameSettings.tscn:880
+#: ../src/general/NewGameSettings.tscn:881
 msgid "PATCH_MAP_TYPE_PROCEDURAL"
 msgstr "Gerado"
 
-#: ../src/general/NewGameSettings.tscn:878
+#: ../src/general/NewGameSettings.tscn:881
 msgid "PATCH_MAP_TYPE_CLASSIC"
 msgstr "Clássico"
 
-#: ../src/general/NewGameSettings.tscn:1023
+#: ../src/general/NewGameSettings.tscn:1026
 msgid "PLANET_GENERATION_TEASER"
 msgstr "Geração de planetas em breve!"
 
-#: ../src/general/NewGameSettings.tscn:1055
+#: ../src/general/NewGameSettings.tscn:1058
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE"
 msgstr "Incluir protótipos dos estágios seguintes"
 
-#: ../src/general/NewGameSettings.tscn:1062
+#: ../src/general/NewGameSettings.tscn:1065
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr "(alguns recursos podem não estar disponíveis quando você alcançar os próximos estágios)"
 
-#: ../src/general/NewGameSettings.tscn:1074
+#: ../src/general/NewGameSettings.tscn:1077
 msgid "EASTER_EGGS"
 msgstr "Incluir easter eggs"
 
-#: ../src/general/NewGameSettings.tscn:1081
+#: ../src/general/NewGameSettings.tscn:1084
 msgid "EASTER_EGGS_EXPLANATION"
 msgstr "(incluir aleatoriamente segredos no jogo)"
 
-#: ../src/general/NewGameSettings.tscn:1091
+#: ../src/general/NewGameSettings.tscn:1095
 #, fuzzy
-msgid "EXPERMENTAL_LABEL"
+msgid "EXPERIMENTAL_LABEL"
 msgstr "Rótulo da entidade"
 
-#: ../src/general/NewGameSettings.tscn:1098
+#: ../src/general/NewGameSettings.tscn:1102
 #, fuzzy
-msgid "EXPERMENTAL_WARNING"
+msgid "EXPERIMENTAL_WARNING"
 msgstr ""
 "Tem certeza que você deseja sair para o menu?\n"
 "Você vai perder seu progresso não salvo."
 
-#: ../src/general/NewGameSettings.tscn:1109
+#: ../src/general/NewGameSettings.tscn:1113
 msgid "DAY_NIGHT_CYCLE_ENABLED"
 msgstr ""
 
-#: ../src/general/NewGameSettings.tscn:1116
+#: ../src/general/NewGameSettings.tscn:1120
 msgid "DAY_NIGHT_CYCLE_ENABLED_EXPLANATION"
 msgstr ""
 
-#: ../src/general/NewGameSettings.tscn:1144
+#: ../src/general/NewGameSettings.tscn:1148
 msgid "ADVANCED_VIEW_BUTTON_TOOLTIP"
 msgstr "Abrir as configurações avançadas"
 
-#: ../src/general/NewGameSettings.tscn:1146
+#: ../src/general/NewGameSettings.tscn:1150
 msgid "ADVANCED_VIEW"
 msgstr "Avançado"
 
-#: ../src/general/NewGameSettings.tscn:1157
+#: ../src/general/NewGameSettings.tscn:1161
 msgid "BASIC_VIEW_BUTTON_TOOLTIP"
 msgstr "Retornar às configurações básicas"
 
-#: ../src/general/NewGameSettings.tscn:1158
+#: ../src/general/NewGameSettings.tscn:1162
 msgid "BASIC_VIEW"
 msgstr "Básico"
 
-#: ../src/general/NewGameSettings.tscn:1168
+#: ../src/general/NewGameSettings.tscn:1172
 msgid "CONFIRM_NORMAL"
 msgstr "Confirmar"
 

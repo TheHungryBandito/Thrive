@@ -1092,14 +1092,14 @@ margin_bottom = 165.0
 margin_right = 668.0
 margin_bottom = 31.0
 custom_fonts/font = ExtResource( 12 )
-text = "EXPERMENTAL_LABEL"
+text = "EXPERIMENTAL_LABEL"
 
 [node name="ExperimentalWarning" type="Label" parent="CenterContainer/VBoxContainer/AdvancedOptions/Misc/VBoxContainer/LabelContainer"]
 margin_top = 35.0
 margin_right = 668.0
 margin_bottom = 55.0
 custom_fonts/font = ExtResource( 13 )
-text = "EXPERMENTAL_WARNING"
+text = "EXPERIMENTAL_WARNING"
 
 [node name="VBoxContainer4" type="VBoxContainer" parent="CenterContainer/VBoxContainer/AdvancedOptions/Misc/VBoxContainer"]
 margin_top = 175.0
