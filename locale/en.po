@@ -2312,12 +2312,12 @@ msgstr "Expermental Settings"
 
 #: ../src/general/NewGameSettings.tscn:1098
 msgid "EXPERMENTAL_WARNING"
-msgstr "These settings are unstable and unpolished. They may affect your game in undesirable ways.\n"
+msgstr "These settings are unpolished and unstable. They may affect your game in undesirable ways.\n"
 "Use at your own risk."
 
 #: ../src/general/NewGameSettings.tscn:1109
 msgid "DAY_NIGHT_CYCLE_ENABLED"
-msgstr "Enable DayNightCycle"
+msgstr "Enable Day/Night Cycle"
 
 #: ../src/general/NewGameSettings.tscn:1116
 msgid "DAY_NIGHT_CYCLE_ENABLED_EXPLANATION"

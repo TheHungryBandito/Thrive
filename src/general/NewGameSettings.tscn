@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://src/gui_common/thrive_theme.tres" type="Theme" id=1]
 [ext_resource path="res://src/general/NewGameSettings.cs" type="Script" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://src/gui_common/fonts/Jura-DemiBold-Huge.tres" type="DynamicFont" id=9]
 [ext_resource path="res://assets/concept_art/planet_generation.jpg" type="Texture" id=10]
 [ext_resource path="res://src/gui_common/CustomRichTextLabel.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/gui_common/fonts/Lato-Regular-Big.tres" type="DynamicFont" id=12]
+[ext_resource path="res://src/gui_common/fonts/Lato-Regular-Smaller.tres" type="DynamicFont" id=13]
 
 [sub_resource type="StyleBoxEmpty" id=2]
 
@@ -312,8 +314,9 @@ text = "MISC"
 
 [node name="AdvancedOptions" type="PanelContainer" parent="CenterContainer/VBoxContainer"]
 visible = false
+margin_top = 269.0
 margin_right = 700.0
-margin_bottom = 600.0
+margin_bottom = 869.0
 rect_min_size = Vector2( 700, 600 )
 
 [node name="Difficulty" type="MarginContainer" parent="CenterContainer/VBoxContainer/AdvancedOptions"]
@@ -1083,24 +1086,25 @@ text = "EASTER_EGGS_EXPLANATION"
 [node name="LabelContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/AdvancedOptions/Misc/VBoxContainer"]
 margin_top = 110.0
 margin_right = 668.0
-margin_bottom = 155.0
+margin_bottom = 165.0
 
 [node name="ExperimentalLabel" type="Label" parent="CenterContainer/VBoxContainer/AdvancedOptions/Misc/VBoxContainer/LabelContainer"]
 margin_right = 668.0
-margin_bottom = 25.0
+margin_bottom = 31.0
+custom_fonts/font = ExtResource( 12 )
 text = "EXPERMENTAL_LABEL"
 
 [node name="ExperimentalWarning" type="Label" parent="CenterContainer/VBoxContainer/AdvancedOptions/Misc/VBoxContainer/LabelContainer"]
-margin_top = 29.0
+margin_top = 35.0
 margin_right = 668.0
-margin_bottom = 45.0
-custom_fonts/font = ExtResource( 3 )
+margin_bottom = 55.0
+custom_fonts/font = ExtResource( 13 )
 text = "EXPERMENTAL_WARNING"
 
 [node name="VBoxContainer4" type="VBoxContainer" parent="CenterContainer/VBoxContainer/AdvancedOptions/Misc/VBoxContainer"]
-margin_top = 165.0
+margin_top = 175.0
 margin_right = 668.0
-margin_bottom = 210.0
+margin_bottom = 220.0
 
 [node name="DayNightCycle" parent="CenterContainer/VBoxContainer/AdvancedOptions/Misc/VBoxContainer/VBoxContainer4" instance=ExtResource( 4 )]
 margin_right = 300.0
