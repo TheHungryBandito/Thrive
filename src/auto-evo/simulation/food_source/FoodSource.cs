@@ -43,7 +43,7 @@
         /// </summary>
         /// <remarks>
         ///   <para>
-        ///     This method should include any phenomenon related to the compound and its use, 
+        ///     This method should include any phenomenon related to the compound and its use,
         ///     such as energy generation, storage...
         ///   </para>
         /// </remarks>
