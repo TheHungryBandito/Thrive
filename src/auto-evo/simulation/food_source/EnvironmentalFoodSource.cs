@@ -22,7 +22,7 @@
         {
             var microbeSpecies = (MicrobeSpecies)species;
 
-            var energyCreationScore = EnergyGenerationScore(microbeSpecies, compound, patch, simulationCache);
+            var energyCreationScore = CompoundUseScore(microbeSpecies, compound, patch, simulationCache);
 
             var energyCost = simulationCache
                 .GetEnergyBalanceForSpecies(microbeSpecies, patch.Biome)
@@ -41,6 +41,12 @@
         public override float TotalEnergyAvailable()
         {
             return totalEnvironmentalEnergySource;
+        }
+
+        protected override float StorageScore(MicrobeSpecies species, Compound compound, Patch patch,
+             SimulationCache simulationCache)
+        {
+            return 1.0f;
         }
     }
 }
