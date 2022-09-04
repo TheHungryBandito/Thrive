@@ -83,7 +83,8 @@ public partial class DebugOverlays
         metricsText.Text =
             new LocalizedString("METRICS_CONTENT", Performance.GetMonitor(Performance.Monitor.TimeProcess),
                     Performance.GetMonitor(Performance.Monitor.TimePhysicsProcess),
-                    Math.Round(entities, 1), Math.Round(children, 1), Math.Round(spawnHistory.Sum(), 1), Math.Round(despawnHistory.Sum(), 1),
+                    Math.Round(entities, 1), Math.Round(children, 1),
+                    Math.Round(spawnHistory.Sum(), 1), Math.Round(despawnHistory.Sum(), 1),
                     Performance.GetMonitor(Performance.Monitor.ObjectNodeCount),
                     OS.GetName() == Constants.OS_WINDOWS_NAME ?
                         TranslationServer.Translate("UNKNOWN_ON_WINDOWS") :
