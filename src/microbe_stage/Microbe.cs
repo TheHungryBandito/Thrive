@@ -203,7 +203,12 @@ public partial class Microbe : RigidBody, ISpawned, IProcessable, IMicrobeAI, IS
     [JsonProperty]
     public int DespawnRadiusSquared { get; set; }
 
-    public int EntityWeight => organelles?.Count ?? 1;
+    /// <summary>
+    ///   Entity weight for microbes counts all organelles with a scaling factor.
+    /// </summary>
+    [JsonIgnore]
+    public float EntityWeight => organelles?.Count * Constants.ORGANELLE_ENTITY_WEIGHT ??
+        throw new InvalidOperationException("Organelles not initialised on microbe spawn");
 
     /// <summary>
     ///   If true this shifts the purpose of this cell for visualizations-only

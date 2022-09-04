@@ -694,7 +694,12 @@ public static class Constants
     /// <summary>
     ///   Delete a max of this many entities per step to reduce lag from deleting tons of entities at once.
     /// </summary>
-    public const int MAX_DESPAWNS_PER_FRAME = 4;
+    public const int MAX_DESPAWNS_PER_FRAME = 10;
+
+    /// <summary>
+    ///   Multiplier for how much organelles inside spawned cells contribute to the entity count.
+    /// </summary>
+    public const float ORGANELLE_ENTITY_WEIGHT = 0.5f;
 
     /// <summary>
     ///   How often despawns happen on top of the normal despawns that are part of the spawn cycle

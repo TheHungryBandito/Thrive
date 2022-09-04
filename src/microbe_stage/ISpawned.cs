@@ -10,7 +10,7 @@ public interface ISpawned : IEntity
     int DespawnRadiusSquared { get; set; }
 
     /// <summary>
-    ///   How much this entity contributes to the entity limit (based on Node complexity)
+    ///   How much this entity contributes to the entity limit relative to a single node
     /// </summary>
-    int EntityWeight { get; }
+    float EntityWeight { get; }
 }
