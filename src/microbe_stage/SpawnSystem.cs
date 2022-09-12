@@ -116,8 +116,8 @@ public class SpawnSystem : ISpawnSystem
         {
             if (!spawned.EntityNode.IsQueuedForDeletion())
             {
-                spawned.DestroyDetachAndQueueFree();
                 despawned += spawned.EntityWeight;
+                spawned.DestroyDetachAndQueueFree();
             }
         }
 
@@ -162,7 +162,7 @@ public class SpawnSystem : ISpawnSystem
         // If we have queued spawns to do spawn those
         HandleQueuedSpawns(ref spawnsLeftThisFrame, playerPosition);
 
-        if (spawnsLeftThisFrame <= 0.0f)
+        if (spawnsLeftThisFrame <= 0)
             return;
 
         // This is now an if to make sure that the spawn system is
@@ -208,7 +208,7 @@ public class SpawnSystem : ISpawnSystem
         float spawned = 0.0f;
 
         // Spawn from the queue
-        while (spawnsLeftThisFrame > 0.0f && queuedSpawns.Count > 0)
+        while (spawnsLeftThisFrame > 0 && queuedSpawns.Count > 0)
         {
             var spawn = queuedSpawns.First();
             var enumerator = spawn.Spawns;
@@ -389,7 +389,7 @@ public class SpawnSystem : ISpawnSystem
 
         var spawner = enumerable.GetEnumerator();
 
-        while (spawnsLeftThisFrame > 0.0f)
+        while (spawnsLeftThisFrame > 0)
         {
             if (!spawner.MoveNext())
             {
@@ -426,8 +426,8 @@ public class SpawnSystem : ISpawnSystem
     /// <returns>The number of alive entities, used to limit the total</returns>
     private float DespawnEntities(Vector3 playerPosition)
     {
-        float entitiesDeleted = 0;
-        float spawnedCount = 0;
+        float entitiesDeleted = 0.0f;
+        float spawnedCount = 0.0f;
 
         foreach (var spawned in worldRoot.GetChildrenToProcess<ISpawned>(Constants.SPAWNED_GROUP))
         {

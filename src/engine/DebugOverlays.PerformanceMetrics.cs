@@ -29,7 +29,7 @@ public partial class DebugOverlays
     private Label metricsText = null!;
 
     private float entities;
-    private float children;
+    private int children;
     private float currentSpawned;
     private float currentDespawned;
 
@@ -45,7 +45,7 @@ public partial class DebugOverlays
         }
     }
 
-    public void ReportEntities(float totalEntities, float otherChildren)
+    public void ReportEntities(float totalEntities, int otherChildren)
     {
         entities = totalEntities;
         children = otherChildren;
@@ -83,7 +83,7 @@ public partial class DebugOverlays
         metricsText.Text =
             new LocalizedString("METRICS_CONTENT", Performance.GetMonitor(Performance.Monitor.TimeProcess),
                     Performance.GetMonitor(Performance.Monitor.TimePhysicsProcess),
-                    Math.Round(entities, 1), Math.Round(children, 1),
+                    Math.Round(entities, 1), children,
                     Math.Round(spawnHistory.Sum(), 1), Math.Round(despawnHistory.Sum(), 1),
                     Performance.GetMonitor(Performance.Monitor.ObjectNodeCount),
                     OS.GetName() == Constants.OS_WINDOWS_NAME ?
@@ -101,7 +101,7 @@ public partial class DebugOverlays
                 .ToString();
 
         entities = 0.0f;
-        children = 0.0f;
+        children = 0;
 
         spawnHistory.AddToBack(currentSpawned);
         despawnHistory.AddToBack(currentDespawned);
